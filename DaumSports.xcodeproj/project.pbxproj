@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */; };
+		B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */; };
+		B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */; };
+		B5C68C302AEB50FA00576FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C68C2E2AEB50FA00576FA8 /* Main.storyboard */; };
+		B5C68C322AEB50FB00576FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C68C312AEB50FB00576FA8 /* Assets.xcassets */; };
+		B5C68C352AEB50FB00576FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C68C332AEB50FB00576FA8 /* LaunchScreen.storyboard */; };
+		B5C68C402AEB50FB00576FA8 /* DaumSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C3F2AEB50FB00576FA8 /* DaumSportsTests.swift */; };
+		B5C68C4A2AEB50FB00576FA8 /* DaumSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */; };
+		B5C68C4C2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5C68C3C2AEB50FB00576FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C68C1D2AEB50FA00576FA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C68C242AEB50FA00576FA8;
+			remoteInfo = DaumSports;
+		};
+		B5C68C462AEB50FB00576FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C68C1D2AEB50FA00576FA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C68C242AEB50FA00576FA8;
+			remoteInfo = DaumSports;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5C68C252AEB50FA00576FA8 /* DaumSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5C68C2F2AEB50FA00576FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5C68C312AEB50FB00576FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5C68C342AEB50FB00576FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5C68C362AEB50FB00576FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C68C3B2AEB50FB00576FA8 /* DaumSportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaumSportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C68C3F2AEB50FB00576FA8 /* DaumSportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsTests.swift; sourceTree = "<group>"; };
+		B5C68C452AEB50FB00576FA8 /* DaumSportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaumSportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITests.swift; sourceTree = "<group>"; };
+		B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5C68C222AEB50FA00576FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C68C382AEB50FB00576FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C68C422AEB50FB00576FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5C68C1C2AEB50FA00576FA8 = {
+			isa = PBXGroup;
+			children = (
+				B5C68C272AEB50FA00576FA8 /* DaumSports */,
+				B5C68C3E2AEB50FB00576FA8 /* DaumSportsTests */,
+				B5C68C482AEB50FB00576FA8 /* DaumSportsUITests */,
+				B5C68C262AEB50FA00576FA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5C68C262AEB50FA00576FA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C252AEB50FA00576FA8 /* DaumSports.app */,
+				B5C68C3B2AEB50FB00576FA8 /* DaumSportsTests.xctest */,
+				B5C68C452AEB50FB00576FA8 /* DaumSportsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5C68C272AEB50FA00576FA8 /* DaumSports */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */,
+				B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */,
+				B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */,
+				B5C68C2E2AEB50FA00576FA8 /* Main.storyboard */,
+				B5C68C312AEB50FB00576FA8 /* Assets.xcassets */,
+				B5C68C332AEB50FB00576FA8 /* LaunchScreen.storyboard */,
+				B5C68C362AEB50FB00576FA8 /* Info.plist */,
+			);
+			path = DaumSports;
+			sourceTree = "<group>";
+		};
+		B5C68C3E2AEB50FB00576FA8 /* DaumSportsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C3F2AEB50FB00576FA8 /* DaumSportsTests.swift */,
+			);
+			path = DaumSportsTests;
+			sourceTree = "<group>";
+		};
+		B5C68C482AEB50FB00576FA8 /* DaumSportsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */,
+				B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */,
+			);
+			path = DaumSportsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5C68C242AEB50FA00576FA8 /* DaumSports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C68C4F2AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSports" */;
+			buildPhases = (
+				B5C68C212AEB50FA00576FA8 /* Sources */,
+				B5C68C222AEB50FA00576FA8 /* Frameworks */,
+				B5C68C232AEB50FA00576FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaumSports;
+			productName = DaumSports;
+			productReference = B5C68C252AEB50FA00576FA8 /* DaumSports.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5C68C3A2AEB50FB00576FA8 /* DaumSportsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C68C522AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSportsTests" */;
+			buildPhases = (
+				B5C68C372AEB50FB00576FA8 /* Sources */,
+				B5C68C382AEB50FB00576FA8 /* Frameworks */,
+				B5C68C392AEB50FB00576FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5C68C3D2AEB50FB00576FA8 /* PBXTargetDependency */,
+			);
+			name = DaumSportsTests;
+			productName = DaumSportsTests;
+			productReference = B5C68C3B2AEB50FB00576FA8 /* DaumSportsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5C68C442AEB50FB00576FA8 /* DaumSportsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C68C552AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSportsUITests" */;
+			buildPhases = (
+				B5C68C412AEB50FB00576FA8 /* Sources */,
+				B5C68C422AEB50FB00576FA8 /* Frameworks */,
+				B5C68C432AEB50FB00576FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5C68C472AEB50FB00576FA8 /* PBXTargetDependency */,
+			);
+			name = DaumSportsUITests;
+			productName = DaumSportsUITests;
+			productReference = B5C68C452AEB50FB00576FA8 /* DaumSportsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5C68C1D2AEB50FA00576FA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B5C68C242AEB50FA00576FA8 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B5C68C3A2AEB50FB00576FA8 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B5C68C242AEB50FA00576FA8;
+					};
+					B5C68C442AEB50FB00576FA8 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B5C68C242AEB50FA00576FA8;
+					};
+				};
+			};
+			buildConfigurationList = B5C68C202AEB50FA00576FA8 /* Build configuration list for PBXProject "DaumSports" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5C68C1C2AEB50FA00576FA8;
+			productRefGroup = B5C68C262AEB50FA00576FA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5C68C242AEB50FA00576FA8 /* DaumSports */,
+				B5C68C3A2AEB50FB00576FA8 /* DaumSportsTests */,
+				B5C68C442AEB50FB00576FA8 /* DaumSportsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5C68C232AEB50FA00576FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C68C352AEB50FB00576FA8 /* LaunchScreen.storyboard in Resources */,
+				B5C68C322AEB50FB00576FA8 /* Assets.xcassets in Resources */,
+				B5C68C302AEB50FA00576FA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C68C392AEB50FB00576FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C68C432AEB50FB00576FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5C68C212AEB50FA00576FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */,
+				B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */,
+				B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C68C372AEB50FB00576FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C68C402AEB50FB00576FA8 /* DaumSportsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C68C412AEB50FB00576FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C68C4C2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift in Sources */,
+				B5C68C4A2AEB50FB00576FA8 /* DaumSportsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5C68C3D2AEB50FB00576FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C68C242AEB50FA00576FA8 /* DaumSports */;
+			targetProxy = B5C68C3C2AEB50FB00576FA8 /* PBXContainerItemProxy */;
+		};
+		B5C68C472AEB50FB00576FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C68C242AEB50FA00576FA8 /* DaumSports */;
+			targetProxy = B5C68C462AEB50FB00576FA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5C68C2E2AEB50FA00576FA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5C68C2F2AEB50FA00576FA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5C68C332AEB50FB00576FA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5C68C342AEB50FB00576FA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5C68C4D2AEB50FB00576FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5C68C4E2AEB50FB00576FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5C68C502AEB50FB00576FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M82N55553U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaumSports/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = minjae.DaumSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5C68C512AEB50FB00576FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M82N55553U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaumSports/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = minjae.DaumSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5C68C532AEB50FB00576FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M82N55553U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = minjae.DaumSportsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaumSports.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DaumSports";
+			};
+			name = Debug;
+		};
+		B5C68C542AEB50FB00576FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M82N55553U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = minjae.DaumSportsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaumSports.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DaumSports";
+			};
+			name = Release;
+		};
+		B5C68C562AEB50FB00576FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M82N55553U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = minjae.DaumSportsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DaumSports;
+			};
+			name = Debug;
+		};
+		B5C68C572AEB50FB00576FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M82N55553U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = minjae.DaumSportsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DaumSports;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5C68C202AEB50FA00576FA8 /* Build configuration list for PBXProject "DaumSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C68C4D2AEB50FB00576FA8 /* Debug */,
+				B5C68C4E2AEB50FB00576FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C68C4F2AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C68C502AEB50FB00576FA8 /* Debug */,
+				B5C68C512AEB50FB00576FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C68C522AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSportsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C68C532AEB50FB00576FA8 /* Debug */,
+				B5C68C542AEB50FB00576FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C68C552AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSportsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C68C562AEB50FB00576FA8 /* Debug */,
+				B5C68C572AEB50FB00576FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5C68C1D2AEB50FA00576FA8 /* Project object */;
+}
