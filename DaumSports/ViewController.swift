@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     private let tableView = UITableView()
+    private let viewModel = ViewModel()
     
     func settingUI() {
         view.addSubview(tableView)
@@ -25,49 +26,45 @@ class ViewController: UIViewController {
         
         
     }
-    func fetchData() {
-        let address = "https://sports.daum.net/media-api/harmony/contents.json?page=0&consumerType=HARMONY&status=SERVICE&createDt=20231026000000~20231026235959&discoveryTag%5B0%5D=%257B%2522group%2522%253A%2522media%2522%252C%2522key%2522%253A%2522defaultCategoryId3%2522%252C%2522value%2522%253A%2522100032%2522%257D&size=20"
-        
-        let task = URLSession.shared.dataTask(with: URL(string: address)!) { data, response, error in
-            
-            if let data = data {
-                do {
-                    let res: NewsModel = try
-                    JSONDecoder().decode(NewsModel.self, from: data)
-                    News.data = res.result.contents
-                    
-                    DispatchQueue.main.sync {
-                        self.tableView.reloadData()
-                    }
-                } catch let error {
-                    print(error)
-                }
-            }
-        }.resume()
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        fetchData()
+//        print(viewModel.getUrl())
+        viewModel.dataFetch() { result in
+            switch result {
+            case .success(let data):
+                print("success")
+            case .failure(.invalidUrl):
+                print("invalidUrl")
+            case .failure(.transportError):
+                print("transportError")
+            case .failure(.serverError(code: let code)):
+                print("server Error code: \(code)")
+            case .failure(.missingData):
+                print("missingData")
+            case .failure(.decodingError(error: let error)):
+                print("decodingError: \(error)")
+            }
+        }
         settingUI()
-        print(News.data)
+        
     }
 
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return News.data.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let news = News.data[indexPath.row]
+//        let news = News.data[indexPath.row]
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.identifier,
                                                        for: indexPath
         ) as? NewsTableViewCell else {
             return UITableViewCell()
         }
-        cell.configure(with: news)
+//        cell.configure(with: news)
         return cell
     }
     

@@ -7,24 +7,52 @@
 import Foundation
 
 // MARK: - Model
+struct DaumModel: Codable {
+    let newsModel: NewsModel
+    
+    enum CodingKeys: String, CodingKey {
+        case newsModel = "result"
+    }
+}
+
 struct NewsModel: Codable {
-    let result: Result
+    let newsContents: [NewsContents]
+    
+    enum CodingKeys: String, CodingKey {
+        case newsContents = "contents"
+    }
 }
 
-struct Result: Codable {
-    let contents: [Contents]
+struct NewsContents: Codable {
+    let titleName: String?
+    let newsImage: String?
+    let company: Company
+    
+    enum CodingKeys: String, CodingKey {
+        case titleName = "title"
+        case newsImage = "thumbnailUrl"
+        case company = "cp"
+    }
 }
 
-struct Contents: Codable {
-    let title: String
-    let thumbnailUrl: String
-    let cp: Cp
+struct Company: Codable {
+    let name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "cpName"
+    }
 }
 
-struct Cp: Codable {
-    let cpName: String
+//class News {
+//    static var data = [Contents]()
+//}
+
+//MARK: - Network
+enum NetworkError: Error {
+    case invalidUrl
+    case transportError
+    case serverError(code: Int)
+    case missingData
+    case decodingError(error: Error)
 }
 
-class News {
-    static var data = [Contents]()
-}
