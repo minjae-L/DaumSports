@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    private let viewModel = ViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        viewModel.dataFetch() { result in
+            switch result {
+            case .success(let data):
+                print("success")
+            case .failure(.invalidUrl):
+                print("invalidUrl")
+            case .failure(.transportError):
+                print("transportError")
+            case .failure(.serverError(code: let code)):
+                print("server Error code: \(code)")
+            case .failure(.missingData):
+                print("missingData")
+            case .failure(.decodingError(error: let error)):
+                print("decodingError: \(error)")
+            }
+        }
     }
-
-
 }
-
