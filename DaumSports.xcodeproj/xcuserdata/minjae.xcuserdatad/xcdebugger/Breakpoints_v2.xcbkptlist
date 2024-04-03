@@ -8,15 +8,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "94A46D3D-ED34-4219-B00D-6F8D2F7DC6E1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaumSports/Model.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "Contents"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "NewsContents"
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>

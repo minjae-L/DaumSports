@@ -67,9 +67,7 @@ final class ViewModel {
             do {
                 let parsingData: DaumModel = try
                 JSONDecoder().decode(DaumModel.self, from: loadedData)
-//                self.news = parsingData
                 print(parsingData)
-//                print(loadedData)
                 completion(.success(loadedData))
             } catch let error {
                 print(request)
@@ -80,4 +78,3 @@ final class ViewModel {
         
     }
 }
-//"https://sports.daum.net/media-api/harmony/contents.json?page=0&consumerType=HARMONY&status=SERVICE&createDt=20231026000000~20231026235959&discoveryTag%5B0%5D=%257B%2522group%2522%253A%2522media%2522%252C%2522key%2522%253A%2522defaultCategoryId3%2522%252C%2522value%2522%253A%2522100032%2522%257D&size=20"

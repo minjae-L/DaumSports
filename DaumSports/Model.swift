@@ -43,10 +43,6 @@ struct Company: Codable {
     }
 }
 
-//class News {
-//    static var data = [Contents]()
-//}
-
 //MARK: - Network
 enum NetworkError: Error {
     case invalidUrl

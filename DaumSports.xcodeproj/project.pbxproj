@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5B363302BBC335700C47759 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3632F2BBC335700C47759 /* ViewModel.swift */; };
 		B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */; };
 		B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */; };
 		B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */; };
@@ -16,7 +17,6 @@
 		B5C68C4A2AEB50FB00576FA8 /* DaumSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */; };
 		B5C68C4C2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */; };
 		B5C68C592AEBD96A00576FA8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C582AEBD96A00576FA8 /* Model.swift */; };
-		B5C68C5B2AEBE08200576FA8 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C5A2AEBE08200576FA8 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5B3632F2BBC335700C47759 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B5C68C252AEB50FA00576FA8 /* DaumSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITests.swift; sourceTree = "<group>"; };
 		B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5C68C582AEBD96A00576FA8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		B5C68C5A2AEBE08200576FA8 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				B5C68C332AEB50FB00576FA8 /* LaunchScreen.storyboard */,
 				B5C68C362AEB50FB00576FA8 /* Info.plist */,
 				B5C68C582AEBD96A00576FA8 /* Model.swift */,
-				B5C68C5A2AEBE08200576FA8 /* NewsTableViewCell.swift */,
+				B5B3632F2BBC335700C47759 /* ViewModel.swift */,
 			);
 			path = DaumSports;
 			sourceTree = "<group>";
@@ -262,8 +262,8 @@
 			files = (
 				B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */,
 				B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */,
-				B5C68C5B2AEBE08200576FA8 /* NewsTableViewCell.swift in Sources */,
 				B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */,
+				B5B363302BBC335700C47759 /* ViewModel.swift in Sources */,
 				B5C68C592AEBD96A00576FA8 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
