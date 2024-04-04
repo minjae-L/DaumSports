@@ -17,6 +17,7 @@
 		B5C68C4A2AEB50FB00576FA8 /* DaumSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */; };
 		B5C68C4C2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */; };
 		B5C68C592AEBD96A00576FA8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C582AEBD96A00576FA8 /* Model.swift */; };
+		B5EC2E9C2BBEAA9900ABB935 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B5C68C492AEB50FB00576FA8 /* DaumSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITests.swift; sourceTree = "<group>"; };
 		B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5C68C582AEBD96A00576FA8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B5C68C362AEB50FB00576FA8 /* Info.plist */,
 				B5C68C582AEBD96A00576FA8 /* Model.swift */,
 				B5B3632F2BBC335700C47759 /* ViewModel.swift */,
+				B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */,
 			);
 			path = DaumSports;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */,
 				B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */,
+				B5EC2E9C2BBEAA9900ABB935 /* CollectionViewCell.swift in Sources */,
 				B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */,
 				B5B363302BBC335700C47759 /* ViewModel.swift in Sources */,
 				B5C68C592AEBD96A00576FA8 /* Model.swift in Sources */,
