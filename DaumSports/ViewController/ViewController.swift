@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     lazy private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
-        flowLayout.minimumLineSpacing = 5
+        
         let view = UICollectionView(frame: .zero,collectionViewLayout: flowLayout)
         return view
     }()
@@ -53,31 +53,76 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(CollectionViewCell.self,
                        forCellWithReuseIdentifier: CollectionViewCell.identifier)
+        collectionView.register(CustomCollectionHeaderReusableView.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: CustomCollectionHeaderReusableView.identifier)
+        collectionView.backgroundColor = .gray
     }
     
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    // 섹션안 셀의 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 7
     }
-    
+    // 섹션의 개수
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    // 재사용 셀 선언 및 적용
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath)
-//        cell.backgroundColor = .gray
+        cell.backgroundColor = .white
+        
         return cell
     }
-    
+//    MARK: - Header
+    // 헤더 뷰 선언 및 적용
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
+                                                                               withReuseIdentifier: CustomCollectionHeaderReusableView.identifier,
+                                                                               for: indexPath)
+                    as? CustomCollectionHeaderReusableView
+            else { return UICollectionReusableView() }
+            header.backgroundColor = .white
+            return header
+        } else {
+            return UICollectionReusableView()
+        }
+    }
+    // 특정 헤더에 대한 사이즈 조정
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section > 0 {
+            return CGSizeZero
+        }
+        return CGSize(width: view.frame.width, height: 60)
+    }
 }
 
+//MARK: - FlowLayout
 extension ViewController: UICollectionViewDelegateFlowLayout {
+    // 섹션 안 셀의 개수
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+        return CGSize(width: self.collectionView.frame.width, height: 120)
     }
+    // 연속되는 셀의 행 열 간격 (스크롤 방향 주의)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 0
     }
+    // 연속되는 셀의 아이템의 행 열 간격 (스크롤 방향 주의)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 0
+    }
+    // 특정 섹션에 대한 CollectionView와의 간격
+    func  collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if section < 2 {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        } else {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
+        
     }
 }
+

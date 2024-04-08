@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B5B363302BBC335700C47759 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3632F2BBC335700C47759 /* ViewModel.swift */; };
+		B5BFCACF2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */; };
+		B5BFCADD2BC4222200D62D11 /* checkboxImage_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */; };
+		B5BFCADE2BC4222200D62D11 /* checkboxImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BFCADC2BC4222200D62D11 /* checkboxImage.png */; };
 		B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */; };
 		B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */; };
 		B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		B5B3632F2BBC335700C47759 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionHeaderReusableView.swift; sourceTree = "<group>"; };
+		B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkboxImage_filled.png; sourceTree = "<group>"; };
+		B5BFCADC2BC4222200D62D11 /* checkboxImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkboxImage.png; sourceTree = "<group>"; };
 		B5C68C252AEB50FA00576FA8 /* DaumSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaumSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5BFCAD02BC4181E00D62D11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C582AEBD96A00576FA8 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5BFCAD12BC4182A00D62D11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5B3632F2BBC335700C47759 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5BFCAD22BC4183100D62D11 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B5BFCAD32BC4183F00D62D11 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */,
+				B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		B5BFCAD42BC4187000D62D11 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */,
+				B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B5BFCAD62BC418C600D62D11 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */,
+				B5BFCADC2BC4222200D62D11 /* checkboxImage.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		B5C68C1C2AEB50FA00576FA8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +160,15 @@
 		B5C68C272AEB50FA00576FA8 /* DaumSports */ = {
 			isa = PBXGroup;
 			children = (
-				B5C68C282AEB50FA00576FA8 /* AppDelegate.swift */,
-				B5C68C2A2AEB50FA00576FA8 /* SceneDelegate.swift */,
-				B5C68C2C2AEB50FA00576FA8 /* ViewController.swift */,
+				B5BFCAD32BC4183F00D62D11 /* Delegate */,
+				B5BFCAD12BC4182A00D62D11 /* ViewModel */,
+				B5BFCAD02BC4181E00D62D11 /* Model */,
+				B5BFCAD22BC4183100D62D11 /* ViewController */,
+				B5BFCAD42BC4187000D62D11 /* Cell */,
 				B5C68C312AEB50FB00576FA8 /* Assets.xcassets */,
+				B5BFCAD62BC418C600D62D11 /* Images */,
 				B5C68C332AEB50FB00576FA8 /* LaunchScreen.storyboard */,
 				B5C68C362AEB50FB00576FA8 /* Info.plist */,
-				B5C68C582AEBD96A00576FA8 /* Model.swift */,
-				B5B3632F2BBC335700C47759 /* ViewModel.swift */,
-				B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */,
 			);
 			path = DaumSports;
 			sourceTree = "<group>";
@@ -237,7 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BFCADD2BC4222200D62D11 /* checkboxImage_filled.png in Resources */,
 				B5C68C352AEB50FB00576FA8 /* LaunchScreen.storyboard in Resources */,
+				B5BFCADE2BC4222200D62D11 /* checkboxImage.png in Resources */,
 				B5C68C322AEB50FB00576FA8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +324,7 @@
 			files = (
 				B5C68C2D2AEB50FA00576FA8 /* ViewController.swift in Sources */,
 				B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */,
+				B5BFCACF2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift in Sources */,
 				B5EC2E9C2BBEAA9900ABB935 /* CollectionViewCell.swift in Sources */,
 				B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */,
 				B5B363302BBC335700C47759 /* ViewModel.swift in Sources */,

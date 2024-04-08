@@ -12,7 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .gray
+        
     }
     
     required init?(coder: NSCoder) {
