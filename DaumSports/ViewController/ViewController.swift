@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     private let viewModel = ViewModel()
-    lazy private var collectionView: UICollectionView = {
+    
+    private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         viewModel.dataFetch() { result in
             switch result {
             case .success(_):
+                self.didUpdatedData()
                 print("success")
             case .failure(.invalidUrl):
                 print("invalidUrl")
@@ -39,8 +41,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-//        viewModelDataFetch()
+        viewModelDataFetch()
         configureUI()
+        
     }
     
     private func configureUI() {
@@ -56,7 +59,7 @@ class ViewController: UIViewController {
         collectionView.register(CustomCollectionHeaderReusableView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: CustomCollectionHeaderReusableView.identifier)
-        collectionView.backgroundColor = .gray
+        collectionView.backgroundColor = .lightGray
     }
     
 }
@@ -64,18 +67,18 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     // 섹션안 셀의 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return viewModel.news.count / 4
     }
     // 섹션의 개수
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 4
     }
     // 재사용 셀 선언 및 적용
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier,
                                                             for: indexPath) as? CollectionViewCell else { return UICollectionViewCell()}
         cell.backgroundColor = .white
-
+        cell.configure(model: viewModel.news[indexPath.row + indexPath.section * 5])
         return cell
     }
 //    MARK: - Header
@@ -98,7 +101,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         if section > 0 {
             return CGSizeZero
         }
-        return CGSize(width: view.frame.width, height: 60)
+        return CGSize(width: view.frame.width, height: 40)
     }
 }
 
@@ -106,7 +109,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 extension ViewController: UICollectionViewDelegateFlowLayout {
     // 섹션 안 셀의 크기
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width, height: 120)
+        return CGSize(width: self.view.frame.width, height: 100)
     }
     // 연속되는 셀의 행 열 간격 (스크롤 방향 주의)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -118,11 +121,19 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     }
     // 특정 섹션에 대한 CollectionView와의 간격
     func  collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        if section < 2 {
-            return UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        if section < 3 {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
         } else {
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
     }
 }
 
+extension ViewController: ViewControllerProtocol {
+    func didUpdatedData() {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
+        print(viewModel.news.count)
+    }
+}

@@ -18,7 +18,7 @@ final class CustomCollectionHeaderReusableView: UICollectionReusableView {
     private let mainLabel: UILabel =  {
         let label = UILabel()
         label.text = "전체"
-        label.font = .systemFont(ofSize: 20)
+        label.font = .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -56,13 +56,13 @@ final class CustomCollectionHeaderReusableView: UICollectionReusableView {
         addSubview(mainLabel)
         addSubview(subLabel)
         addSubview(button)
-        mainLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20).isActive = true
+        mainLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
         mainLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        subLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 25).isActive = true
+        subLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15).isActive = true
         subLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30).isActive = true
-        button.topAnchor.constraint(equalTo: self.topAnchor, constant: 25).isActive = true
+        button.topAnchor.constraint(equalTo: self.topAnchor, constant: 15).isActive = true
         button.trailingAnchor.constraint(equalTo: subLabel.leadingAnchor, constant: -10).isActive = true
-        button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15).isActive = true
+        button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5).isActive = true
         button.widthAnchor.constraint(equalToConstant: 20).isActive = true
     }
     required init?(coder: NSCoder) {

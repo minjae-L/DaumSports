@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import Kingfi
+import Kingfisher
 
 class CollectionViewCell: UICollectionViewCell {
     static let identifier = "CollectionViewCell"
@@ -25,13 +25,15 @@ class CollectionViewCell: UICollectionViewCell {
         label.textAlignment = .left
         label.font = .systemFont(ofSize: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.tintColor = .lightGray
+        label.textColor = .gray
         return label
     }()
     private let newsImage: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.sizeToFit()
+        imageView.contentMode = .scaleToFill
+        imageView.layer.cornerRadius = 5
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
@@ -39,7 +41,7 @@ class CollectionViewCell: UICollectionViewCell {
         newsImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
         newsImage.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20).isActive = true
         newsImage.heightAnchor.constraint(equalToConstant: contentView.frame.height - 20).isActive = true
-        newsImage.widthAnchor.constraint(equalToConstant: contentView.frame.width / 4).isActive = true
+        newsImage.widthAnchor.constraint(equalToConstant: contentView.frame.width / 3).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: newsImage.leadingAnchor, constant: -10).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
@@ -65,7 +67,7 @@ class CollectionViewCell: UICollectionViewCell {
         self.titleLabel.text = model.titleName
         self.companyTimeStampLabel.text = model.company.name
         if let urlString = model.newsImage, let url = URL(string: urlString) {
-//            self.newsImage
+            self.newsImage.kf.setImage(with: url)
         }
         
     }
