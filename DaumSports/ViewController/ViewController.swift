@@ -11,9 +11,10 @@ class ViewController: UIViewController {
     private let viewModel = ViewModel()
     lazy private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .vertical
+//        flowLayout.scrollDirection = .vertical
         
-        let view = UICollectionView(frame: .zero,collectionViewLayout: flowLayout)
+        let view = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -44,7 +45,6 @@ class ViewController: UIViewController {
     
     private func configureUI() {
         view.addSubview(collectionView)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
@@ -72,9 +72,11 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     // 재사용 셀 선언 및 적용
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier,
+                                                            for: indexPath) as? CollectionViewCell else { return UICollectionViewCell()}
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath)
         cell.backgroundColor = .white
-        
+
         return cell
     }
 //    MARK: - Header
@@ -103,9 +105,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
 //MARK: - FlowLayout
 extension ViewController: UICollectionViewDelegateFlowLayout {
-    // 섹션 안 셀의 개수
+    // 섹션 안 셀의 크기
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.collectionView.frame.width, height: 120)
+        return CGSize(width: self.view.frame.width, height: 120)
     }
     // 연속되는 셀의 행 열 간격 (스크롤 방향 주의)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -122,7 +124,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         } else {
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
-        
     }
 }
 
