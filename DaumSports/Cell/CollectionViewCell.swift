@@ -6,9 +6,10 @@
 //
 
 import UIKit
+//import Kingfi
 
 class CollectionViewCell: UICollectionViewCell {
-    static var identifier = "CollectionViewCell"
+    static let identifier = "CollectionViewCell"
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -60,4 +61,12 @@ class CollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(model: NewsContents) {
+        self.titleLabel.text = model.titleName
+        self.companyTimeStampLabel.text = model.company.name
+        if let urlString = model.newsImage, let url = URL(string: urlString) {
+//            self.newsImage
+        }
+        
+    }
 }

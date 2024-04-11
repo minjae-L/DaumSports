@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     private let viewModel = ViewModel()
     lazy private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-//        flowLayout.scrollDirection = .vertical
+        flowLayout.scrollDirection = .vertical
         
         let view = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -74,7 +74,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier,
                                                             for: indexPath) as? CollectionViewCell else { return UICollectionViewCell()}
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath)
         cell.backgroundColor = .white
 
         return cell

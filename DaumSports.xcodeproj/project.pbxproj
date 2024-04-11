@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25FAAE8B1D654A921BAE3D06 /* Pods_DaumSports_DaumSportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46E489D50EFFD553B5611A /* Pods_DaumSports_DaumSportsUITests.framework */; };
+		B2BC47C2A73C70DCAF147327 /* Pods_DaumSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3435102FC196A66FE59C42A4 /* Pods_DaumSports.framework */; };
 		B5B363302BBC335700C47759 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3632F2BBC335700C47759 /* ViewModel.swift */; };
 		B5BFCACF2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */; };
 		B5BFCADD2BC4222200D62D11 /* checkboxImage_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */; };
@@ -21,6 +23,7 @@
 		B5C68C4C2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */; };
 		B5C68C592AEBD96A00576FA8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C68C582AEBD96A00576FA8 /* Model.swift */; };
 		B5EC2E9C2BBEAA9900ABB935 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */; };
+		FF4E22F7F1228202721AC920 /* Pods_DaumSportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5706289ABAF969FC093EBF0 /* Pods_DaumSportsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03331B0D0D5B7A6EA07E370C /* Pods-DaumSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSports.release.xcconfig"; path = "Target Support Files/Pods-DaumSports/Pods-DaumSports.release.xcconfig"; sourceTree = "<group>"; };
+		0A4FA16BE238BFCBF50D0E6C /* Pods-DaumSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSports.debug.xcconfig"; path = "Target Support Files/Pods-DaumSports/Pods-DaumSports.debug.xcconfig"; sourceTree = "<group>"; };
+		3435102FC196A66FE59C42A4 /* Pods_DaumSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaumSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2D67FFE89BC8416D11F33F /* Pods-DaumSportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSportsTests.release.xcconfig"; path = "Target Support Files/Pods-DaumSportsTests/Pods-DaumSportsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F5BA38DB6DFD8C8F91B8CFC /* Pods-DaumSports-DaumSportsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSports-DaumSportsUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaumSports-DaumSportsUITests/Pods-DaumSports-DaumSportsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B3632F2BBC335700C47759 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionHeaderReusableView.swift; sourceTree = "<group>"; };
 		B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkboxImage_filled.png; sourceTree = "<group>"; };
@@ -59,6 +67,10 @@
 		B5C68C4B2AEB50FB00576FA8 /* DaumSportsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumSportsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5C68C582AEBD96A00576FA8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B5EC2E9B2BBEAA9900ABB935 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B6A2F3AE03AA7DE2642A5592 /* Pods-DaumSports-DaumSportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSports-DaumSportsUITests.release.xcconfig"; path = "Target Support Files/Pods-DaumSports-DaumSportsUITests/Pods-DaumSports-DaumSportsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C5305393863C7D4517EBA956 /* Pods-DaumSportsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSportsTests.debug.xcconfig"; path = "Target Support Files/Pods-DaumSportsTests/Pods-DaumSportsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5706289ABAF969FC093EBF0 /* Pods_DaumSportsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaumSportsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD46E489D50EFFD553B5611A /* Pods_DaumSports_DaumSportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaumSports_DaumSportsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BC47C2A73C70DCAF147327 /* Pods_DaumSports.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4E22F7F1228202721AC920 /* Pods_DaumSportsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FAAE8B1D654A921BAE3D06 /* Pods_DaumSports_DaumSportsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39EC2849319B47A65C9DEC8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A4FA16BE238BFCBF50D0E6C /* Pods-DaumSports.debug.xcconfig */,
+				03331B0D0D5B7A6EA07E370C /* Pods-DaumSports.release.xcconfig */,
+				9F5BA38DB6DFD8C8F91B8CFC /* Pods-DaumSports-DaumSportsUITests.debug.xcconfig */,
+				B6A2F3AE03AA7DE2642A5592 /* Pods-DaumSports-DaumSportsUITests.release.xcconfig */,
+				C5305393863C7D4517EBA956 /* Pods-DaumSportsTests.debug.xcconfig */,
+				6C2D67FFE89BC8416D11F33F /* Pods-DaumSportsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9839D3346B1804BD0ECE711B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3435102FC196A66FE59C42A4 /* Pods_DaumSports.framework */,
+				DD46E489D50EFFD553B5611A /* Pods_DaumSports_DaumSportsUITests.framework */,
+				D5706289ABAF969FC093EBF0 /* Pods_DaumSportsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5BFCAD02BC4181E00D62D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +183,8 @@
 				B5C68C3E2AEB50FB00576FA8 /* DaumSportsTests */,
 				B5C68C482AEB50FB00576FA8 /* DaumSportsUITests */,
 				B5C68C262AEB50FA00576FA8 /* Products */,
+				39EC2849319B47A65C9DEC8E /* Pods */,
+				9839D3346B1804BD0ECE711B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C68C4F2AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSports" */;
 			buildPhases = (
+				5B95B1431FE0FEDAC3A8C05D /* [CP] Check Pods Manifest.lock */,
 				B5C68C212AEB50FA00576FA8 /* Sources */,
 				B5C68C222AEB50FA00576FA8 /* Frameworks */,
 				B5C68C232AEB50FA00576FA8 /* Resources */,
+				C95D59D85049175F1FA64F44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C68C522AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSportsTests" */;
 			buildPhases = (
+				722E7AA3FDC111F4BCCEE6AB /* [CP] Check Pods Manifest.lock */,
 				B5C68C372AEB50FB00576FA8 /* Sources */,
 				B5C68C382AEB50FB00576FA8 /* Frameworks */,
 				B5C68C392AEB50FB00576FA8 /* Resources */,
@@ -232,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C68C552AEB50FB00576FA8 /* Build configuration list for PBXNativeTarget "DaumSportsUITests" */;
 			buildPhases = (
+				124CDD80D4DDEFC537B25757 /* [CP] Check Pods Manifest.lock */,
 				B5C68C412AEB50FB00576FA8 /* Sources */,
 				B5C68C422AEB50FB00576FA8 /* Frameworks */,
 				B5C68C432AEB50FB00576FA8 /* Resources */,
+				04E49C2A1412112C3209FD3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +362,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E49C2A1412112C3209FD3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaumSports-DaumSportsUITests/Pods-DaumSports-DaumSportsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaumSports-DaumSportsUITests/Pods-DaumSports-DaumSportsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaumSports-DaumSportsUITests/Pods-DaumSports-DaumSportsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		124CDD80D4DDEFC537B25757 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaumSports-DaumSportsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B95B1431FE0FEDAC3A8C05D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaumSports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		722E7AA3FDC111F4BCCEE6AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaumSportsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95D59D85049175F1FA64F44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaumSports/Pods-DaumSports-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaumSports/Pods-DaumSports-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaumSports/Pods-DaumSports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5C68C212AEB50FA00576FA8 /* Sources */ = {
@@ -492,6 +641,7 @@
 		};
 		B5C68C502AEB50FB00576FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4FA16BE238BFCBF50D0E6C /* Pods-DaumSports.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -520,6 +670,7 @@
 		};
 		B5C68C512AEB50FB00576FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03331B0D0D5B7A6EA07E370C /* Pods-DaumSports.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +699,7 @@
 		};
 		B5C68C532AEB50FB00576FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5305393863C7D4517EBA956 /* Pods-DaumSportsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +720,7 @@
 		};
 		B5C68C542AEB50FB00576FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2D67FFE89BC8416D11F33F /* Pods-DaumSportsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +741,7 @@
 		};
 		B5C68C562AEB50FB00576FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F5BA38DB6DFD8C8F91B8CFC /* Pods-DaumSports-DaumSportsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,6 +760,7 @@
 		};
 		B5C68C572AEB50FB00576FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A2F3AE03AA7DE2642A5592 /* Pods-DaumSports-DaumSportsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
