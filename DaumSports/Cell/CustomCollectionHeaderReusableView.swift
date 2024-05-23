@@ -21,6 +21,7 @@ final class CustomCollectionHeaderReusableView: UICollectionReusableView {
         label.font = .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
         return label
     }()
     

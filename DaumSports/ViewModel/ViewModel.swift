@@ -51,7 +51,7 @@ final class ViewModel {
             completion(.failure(.invalidUrl))
             return
         }
-        
+        print(url)
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = "GET"
         

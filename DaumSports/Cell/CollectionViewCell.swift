@@ -17,7 +17,8 @@ class CollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 20)
         label.numberOfLines = 2
-
+        label.textColor = .black
+        
         return label
     }()
     private let companyTimeStampLabel: UILabel = {
@@ -31,7 +32,7 @@ class CollectionViewCell: UICollectionViewCell {
     private let newsImage: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFit
         imageView.layer.cornerRadius = 5
         imageView.layer.masksToBounds = true
         return imageView
@@ -41,7 +42,7 @@ class CollectionViewCell: UICollectionViewCell {
         newsImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
         newsImage.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20).isActive = true
         newsImage.heightAnchor.constraint(equalToConstant: contentView.frame.height - 20).isActive = true
-        newsImage.widthAnchor.constraint(equalToConstant: contentView.frame.width / 3).isActive = true
+        newsImage.widthAnchor.constraint(lessThanOrEqualToConstant: 130).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: newsImage.leadingAnchor, constant: -10).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true

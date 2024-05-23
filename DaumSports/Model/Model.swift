@@ -27,11 +27,13 @@ struct NewsContents: Codable {
     let titleName: String?
     let newsImage: String?
     let company: Company
+    let contentUrl: String?
     
     enum CodingKeys: String, CodingKey {
         case titleName = "title"
         case newsImage = "thumbnailUrl"
         case company = "cp"
+        case contentUrl
     }
 }
 
