@@ -1,0 +1,6 @@
+framework module Pods_DaumSports_DaumSportsUITests {
+  umbrella header "Pods-DaumSports-DaumSportsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,9 +7,19 @@
 
 import Foundation
 
+protocol ViewControllerProtocol: AnyObject {
+    func didUpdatedData()
+}
 final class ViewModel {
-    var news = [NewsContents]()
+    weak var delegate: ViewControllerProtocol?
+    var news: [NewsContents] = [] {
+        didSet {
+            delegate?.didUpdatedData()
+        }
+    }
     
+    
+    // MARK: - URLSession
     private func getUrl() -> URLComponents {
         let scheme = "https"
         let host = "sports.daum.net"
@@ -41,11 +51,11 @@ final class ViewModel {
             completion(.failure(.invalidUrl))
             return
         }
-        
+        print(url)
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        let dataTask = session.dataTask(with: request) { (data, response, error) in
+        let dataTask = session.dataTask(with: request) { (data, response, error) in 
             // 통신 에러 확인
             guard error == nil else {
                 completion(.failure(.transportError))
@@ -67,7 +77,7 @@ final class ViewModel {
             do {
                 let parsingData: DaumModel = try
                 JSONDecoder().decode(DaumModel.self, from: loadedData)
-                print(parsingData)
+                self.news = parsingData.newsModel.newsContents
                 completion(.success(loadedData))
             } catch let error {
                 print(request)
@@ -75,6 +85,5 @@ final class ViewModel {
             }
             
         }.resume()
-        
     }
 }
