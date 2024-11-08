@@ -7,6 +7,7 @@ target 'DaumSports' do
 
   # Pods for DaumSports
 	pod 'Kingfisher', '~>7.0'
+	pod 'Alamofire'
   target 'DaumSportsTests' do
     inherit! :search_paths
     # Pods for testing

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		25FAAE8B1D654A921BAE3D06 /* Pods_DaumSports_DaumSportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46E489D50EFFD553B5611A /* Pods_DaumSports_DaumSportsUITests.framework */; };
 		B2BC47C2A73C70DCAF147327 /* Pods_DaumSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3435102FC196A66FE59C42A4 /* Pods_DaumSports.framework */; };
+		B55427122CDE24CA0089F499 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55427112CDE24CA0089F499 /* NetworkManager.swift */; };
 		B5B363302BBC335700C47759 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B3632F2BBC335700C47759 /* ViewModel.swift */; };
 		B5BFCACF2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */; };
 		B5BFCADD2BC4222200D62D11 /* checkboxImage_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */; };
@@ -49,6 +50,7 @@
 		3435102FC196A66FE59C42A4 /* Pods_DaumSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaumSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2D67FFE89BC8416D11F33F /* Pods-DaumSportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSportsTests.release.xcconfig"; path = "Target Support Files/Pods-DaumSportsTests/Pods-DaumSportsTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F5BA38DB6DFD8C8F91B8CFC /* Pods-DaumSports-DaumSportsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaumSports-DaumSportsUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaumSports-DaumSportsUITests/Pods-DaumSports-DaumSportsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B55427112CDE24CA0089F499 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B5B3632F2BBC335700C47759 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B5BFCACE2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionHeaderReusableView.swift; sourceTree = "<group>"; };
 		B5BFCADB2BC4222200D62D11 /* checkboxImage_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkboxImage_filled.png; sourceTree = "<group>"; };
@@ -111,7 +113,6 @@
 				C5305393863C7D4517EBA956 /* Pods-DaumSportsTests.debug.xcconfig */,
 				6C2D67FFE89BC8416D11F33F /* Pods-DaumSportsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +211,7 @@
 				B5BFCAD62BC418C600D62D11 /* Images */,
 				B5C68C332AEB50FB00576FA8 /* LaunchScreen.storyboard */,
 				B5C68C362AEB50FB00576FA8 /* Info.plist */,
+				B55427112CDE24CA0089F499 /* NetworkManager.swift */,
 			);
 			path = DaumSports;
 			sourceTree = "<group>";
@@ -475,6 +477,7 @@
 				B5C68C292AEB50FA00576FA8 /* AppDelegate.swift in Sources */,
 				B5BFCACF2BC3E42800D62D11 /* CustomCollectionHeaderReusableView.swift in Sources */,
 				B5EC2E9C2BBEAA9900ABB935 /* CollectionViewCell.swift in Sources */,
+				B55427122CDE24CA0089F499 /* NetworkManager.swift in Sources */,
 				B5C68C2B2AEB50FA00576FA8 /* SceneDelegate.swift in Sources */,
 				B5B363302BBC335700C47759 /* ViewModel.swift in Sources */,
 				B5C68C592AEBD96A00576FA8 /* Model.swift in Sources */,

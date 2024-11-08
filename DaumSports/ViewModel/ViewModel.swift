@@ -51,7 +51,6 @@ final class ViewModel {
             completion(.failure(.invalidUrl))
             return
         }
-        print(url)
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = "GET"
         
@@ -80,7 +79,6 @@ final class ViewModel {
                 self.news = parsingData.newsModel.newsContents
                 completion(.success(loadedData))
             } catch let error {
-                print(request)
                 completion(.failure(.decodingError(error: error)))
             }
             
